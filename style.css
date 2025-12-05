@@ -1,0 +1,676 @@
+/* =============================
+   עיצוב כללי
+============================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0fff0; /* רקע ירוק בהיר */
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============================
+   כותרת ראשית
+============================= */
+header {
+  text-align: center;
+  padding: 10px 20px;
+  background: linear-gradient(120deg, #a8e6a2, #32cd32);
+  color: #000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* =============================
+   ניווט
+============================= */
+nav {
+  background-color: #32cd32;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e0ffe0;
+}
+
+/* =============================
+   סקשנים
+============================= */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #000000;
+}
+
+/* =============================
+   אודותינו
+============================= */
+.about-box {
+  max-width: 1600px;
+  margin: -40px auto;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: right;
+}
+
+.about-box h2 {
+  margin: 0 0 15px 0;
+  font-size: 32px;
+  color: #000;
+  text-align: right;
+}
+
+.about-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: right;
+}
+/* ===========================
+   גלריה משודרגת בתוך תיבה
+=========================== */
+
+/* תיבת גלריה */
+.gallery-container {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #f9fbfd, #e0e7f1);
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* כותרת לגלריה – מימין */
+.gallery-container h2 {
+  text-align: right; /* הכותרת מצד ימין */
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-family: "Segoe UI", sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  padding-right: 10px; /* רווח קטן מהקצה */
+}
+
+/* הקו הדקורטיבי אחרי הכותרת – גם מימין */
+.gallery-container h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  margin: 10px 0 0 auto; /* הקו מצד ימין */
+  border-radius: 2px;
+}
+
+/* הגלריה – 5 תמונות לשורה */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 תמונות בשורה */
+  gap: 20px;
+}
+
+/* התמונות */
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(1);
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+}
+
+/* אנימציות לכל תמונה */
+.gallery img:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.gallery img:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.gallery img:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.gallery img:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.gallery img:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.gallery img:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.gallery img:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.gallery img:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.gallery img:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.gallery img:nth-child(10) {
+  animation-delay: 1s;
+}
+.gallery img:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.gallery img:nth-child(12) {
+  animation-delay: 1.2s;
+}
+.gallery img:nth-child(13) {
+  animation-delay: 1.3s;
+}
+.gallery img:nth-child(14) {
+  animation-delay: 1.4s;
+}
+.gallery img:nth-child(15) {
+  animation-delay: 1.5s;
+}
+.gallery img:nth-child(16) {
+  animation-delay: 1.6s;
+}
+.gallery img:nth-child(17) {
+  animation-delay: 1.7s;
+}
+.gallery img:nth-child(18) {
+  animation-delay: 1.8s;
+}
+.gallery img:nth-child(19) {
+  animation-delay: 1.9s;
+}
+.gallery img:nth-child(20) {
+  animation-delay: 2s;
+}
+
+/* אפקט hover */
+.gallery img:hover {
+  transform: scale(1.15) rotate(1deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.15);
+  z-index: 10;
+}
+
+/* אנימציית fade in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* התאמה למובייל – שורה אחת 2 תמונות */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* התאמה לטלפונים קטנים – שורה אחת 1 תמונה */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* אנימציית fade in מלמטה למעלה */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 20px;
+  }
+  .gallery-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* אנימציית fade in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =============================
+   מודל תמונה
+============================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* =============================
+   מחשבון אלומיניום – גרסה אחידה לשדות
+============================= */
+.aluminum-calculator {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 35px 40px;
+  background: linear-gradient(145deg, #e6ffe6, #8cff8c);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.aluminum-calculator:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.aluminum-calculator h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #1b5e20;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.aluminum-calculator label {
+  display: block;
+  margin: 18px 0 6px 0;
+  font-size: 17px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* =============================
+   שדות קלט אחידים
+============================= */
+.aluminum-calculator select,
+.aluminum-calculator input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #2e7d32;
+  font-size: 16px;
+  margin-bottom: 18px;
+  background-color: #f5fff5;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  /* תיקון אורך השורה */
+  box-sizing: border-box; /* כולל padding ו-border בגודל הכולל */
+  min-height: 45px; /* גובה אחיד לכל השדות */
+  text-align: right; /* ממקם מספרים לימין */
+  overflow: hidden; /* מונע חריגה של טקסט */
+}
+
+/* מצב פוקוס עם זוהר עדין */
+.aluminum-calculator select:focus,
+.aluminum-calculator input[type="number"]:focus {
+  border-color: #1b5e20;
+  box-shadow: 0 0 8px rgba(30, 150, 30, 0.4);
+  outline: none;
+}
+
+/* =============================
+   כפתור חישוב
+============================= */
+.aluminum-calculator button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #32cd32, #28a428);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.aluminum-calculator button:hover {
+  background: linear-gradient(90deg, #28a428, #1e7b1e);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================
+   תיבת תוצאה
+============================= */
+.aluminum-calculator #result {
+  margin-top: 25px;
+  padding: 18px;
+  background-color: #f0fff0;
+  border: 2px solid #2e7d32;
+  border-radius: 12px;
+  font-size: 20px;
+  color: #004d00;
+  text-align: center;
+  min-height: 50px;
+  line-height: 1.4;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* =============================
+   צור קשר
+============================= */
+#contact {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.contact-info strong {
+  color: #333;
+}
+
+/* =============================
+   פוטר
+============================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+}
+
+/* =============================
+   ריספונסיב
+============================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section h2 {
+    font-size: 26px;
+  }
+
+  .gallery-box .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .calculator,
+  .contact-form,
+  .about-box,
+  .gallery-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aluminum-calculator {
+    padding: 20px;
+  }
+  .aluminum-calculator h2 {
+    font-size: 24px;
+  }
+  .aluminum-calculator button {
+    font-size: 16px;
+  }
+  .aluminum-calculator #result {
+    font-size: 16px;
+  }
+
+  .gallery-box .gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* רקע חצי שקוף */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.waze-btn {
+  position: fixed;
+  bottom: 160px; /* מעל כפתורי וואטסאפ/פייסבוק */
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0099ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  transition: transform 0.2s;
+}
+
+.waze-btn:hover {
+  transform: scale(1.1);
+}
+
+/* וואטסאפ */
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 20px; /* הכי למטה */
+  left: 20px; /* או right: 20px */
+  width: 55px;
+  height: 55px;
+}
+
+/* פייסבוק */
+.facebook-fixed {
+  position: fixed;
+  bottom: 90px; /* מעל וואטסאפ */
+  left: 20px;
+  width: 55px;
+  height: 55px;
+}
+
+/* WAZE */
+.waze-btn {
+  position: fixed;
+  bottom: 160px; /* מעל פייסבוק */
+  left: 20px;
+  width: 55px;
+  height: 55px;
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>לירום אלומיניום וזכוכית</title>
+
+      <!-- Favicon מהתמונה הראשונה בגלריה -->
+      <link rel="icon" type="image/png" href="images/photo1.jpg" />
+    </head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>לירום אלומיניום וזכוכית בע"מ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="aluminum-calculator.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- כותרת ראשית -->
+    <header>
+      <div class="header-content">
+        <h1>לירום אלומיניום וזכוכית בע"מ</h1>
+        <p>
+          חלונות ודלתות אלומיניום , דלתות כניסה לבניינים , תריסים חשמליים ,
+          מקלחונים , סגירות חורף , שערים וגדרות , דלתות סיקוריות , רשתות נגד
+          יתושים ועוד .
+        </p>
+      </div>
+    </header>
+    <!DOCTYPE html>
+    <html lang="he" dir="rtl">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>פופאפ אוטומטי</title>
+        <style>
+          /* רקע כהה שמסתיר את הדף */
+          .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none; /* יופיע באוטומט */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+          }
+
+          /* חלון הפופאפ */
+          .popup-content {
+            position: relative;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 300px;
+            width: 90%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+          }
+
+          /* כפתור סגירה (איקס) */
+          .popup-close {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* RTL: איקס בצד שמאל */
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+            cursor: pointer;
+          }
+
+          /* טקסט הפופאפ */
+          .popup-content h2 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+          }
+
+          .popup-content p {
+            font-size: 16px;
+            margin: 0;
+          }
+        </style>
+      </head>
+      <body>
+        <!-- הפופאפ עצמו -->
+        <div class="popup-overlay" id="popup">
+          <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <h2>ברוכים הבאים</h2>
+          </div>
+        </div>
+
+        <script>
+          // בחירת האלמנטים
+          const popup = document.getElementById("popup");
+          const closeBtn = document.getElementById("popup-close");
+
+          // הפופאפ מופיע אוטומטית בעת טעינת הדף
+          window.addEventListener("load", () => {
+            popup.style.display = "flex";
+          });
+
+          // סגירת הפופאפ בלחיצה על האיקס
+          closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+          });
+
+          // סגירת הפופאפ בלחיצה מחוץ לחלון עצמו
+          popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+              popup.style.display = "none";
+            }
+          });
+        </script>
+      </body>
+    </html>
+
+    <!-- ניווט -->
+    <nav>
+      <ul>
+        <li><a href="#about">מי אנחנו</a></li>
+        <li><a href="#gallery">גלריה</a></li>
+        <li><a href="#calculator">מחשבון אלומיניום</a></li>
+        <li><a href="tips.html">טיפים שימושיים</a></li>
+        <li><a href="bikorot.html">ביקורות ודירוג</a></li>
+
+        <li><a href="privacy.html">מדיניות פרטיות</a></li>
+
+        <li><a href="#contact">צור קשר</a></li>
+      </ul>
+    </nav>
+
+    <!-- אודותינו -->
+    <section id="about">
+      <div class="about-box">
+        <h2>מי אנחנו</h2>
+        <p>
+          <strong
+            >לירום אלומיניום וזכוכית בע"מ היא חברה מובילה בישראל בייצור והתקנה
+            של מוצרי אלומיניום איכותיים ומתקדמים . החברה מתמחה במגוון רחב של
+            פתרונות – חלונות בלגיים , ויטרינות , תריסי הזזה , רשתות נגד יתושים
+            ותריסים חשמליים – ועובדת עם כל סוגי הפרופילים וסדרות קליל הפופולריות
+            בשוק . צוות לירום אלומיניום המקצועי מחויב לאיכות ללא פשרות , שירות
+            אישי ומקצועי , מחירים הוגנים ועמידה מדויקת בלוחות זמנים . אנו מספקים
+            פתרונות מותאמים במיוחד לאדריכלים , קבלנים ולפרויקטים גדולים , ומבצעים
+            עבודות מגוונות כולל תמ"א , בניינים וווילות. בנוסף, לירום אלומיניום שם
+            דגש על חדשנות , שימוש בחומרים איכותיים ביותר והקפדה על כל פרט – כדי
+            להבטיח שכל מוצר יעמוד בסטנדרטים הגבוהים ביותר ויתאים בדיוק לצרכים
+            שלכם .</strong
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- גלריה -->
+    <div class="gallery-box" id="gallery">
+      <section id="gallery">
+        <h2><b>גלריית עבודות</b></h2>
+        <p>
+          <strong
+            >טעימה קטנה מתוך מגוון הפרויקטים המקצועיים שיצרנו – שילוב מושלם של
+            איכות , דיוק , יצירתיות וניסיון רב שנים , שמבטיח תוצאה מרשימה
+            ומותאמת בדיוק לצרכים שלכם .</strong
+          >
+        </p>
+        <div class="gallery">
+          <figure>
+            <figcaption>
+              <strong>חלון בלגי מעוצב מדגם 4300 משובץ זכוכיות טריפלקס </strong>
+            </figcaption>
+            <img src="images/photo1.jpg" alt="דלת בלגי" class="clickable-img" />
+          </figure>
+          <figure>
+            <figcaption>
+              <strong>חלון מדגם 7000 עם זכוכיות טריפקס חלבי</strong>
+            </figcaption>
+            <img
+              src="images/photo2.jpg"
+              alt="חלון בלגי"
+              class="clickable-img"
+            />
+          </figure>
+          <figure>
+            <figcaption>
+              <strong>חלון בלגי מדגם 4300 עם זכוכיות טריפלקס</strong>
+            </figcaption>
+            <img
+              src="images/photo3.jpg"
+              alt="סגירת חורף"
+              class="clickable-img"
+            />
+          </figure>
+          <figure>
+            <figcaption>
+              <strong>מקלחון לפי בקשת הלקוח </strong>
+            </figcaption>
+            <img
+              src="images/photo4.jpg"
+              alt="מעקה זכוכית"
+              class="clickable-img"
+            />
+          </figure>
+          <figure>
+            <figcaption>
+              <strong>דלת בלגית 4300 מעוצבת משולב זכוכיות טריפלקס</strong>
+            </figcaption>
+            <img
+              src="images/photo5.jpg"
+              alt="דלת זכוכית"
+              class="clickable-img"
+            />
+          </figure>
+          <figure>
+            <figcaption>
+              <strong
+                >גדר חניה לרכב מאלומיניום משולב זכוכיות טריפלקס חלבי</strong
+              >
+            </figcaption>
+            <img
+              src="images/photo6.jpg"
+              alt="פרגולה אלומיניום"
+              class="clickable-img"
+            />
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <!-- מודל פתיחה -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <!-- מחשבון אלומיניום -->
+    <section id="calculator" class="aluminum-calculator">
+      <h2>מחשבון מטרים - מ"ר אלומיניום</h2>
+
+      <label for="typeSelect">בחר סוג מוצר :</label>
+      <select id="typeSelect">
+        <option value="1450">חלון בלגי מעוצב החל מ - 1,450 ₪ למ"ר</option>
+        <option value="900">חלון קלאסי דגם 7000 החל מ - 900 ₪ למ"ר</option>
+        <option value="1100">חלון קלאסי דגם 9000 החל מ - 1,100 ₪ למ"ר</option>
+        <option value="3800">דלת בלגית מעוצבת החל - 3,800 ₪ ליחידה</option>
+        <option value="3350">דלת מדגם 2000 קלאסי החל מ - 3,350 ₪ ליחידה</option>
+        <option value="450">רשתות נגד יתושים החל מ - 450 ₪ למ"ר</option>
+      </select>
+
+      <label for="meters">כמה מטרים או יחידות ?</label>
+      <input type="number" id="meters" placeholder="לדוגמה: 40" min="1" />
+
+      <button onclick="calcPrice()">חשב מחיר</button>
+      <div id="result">המחיר המשוער :</div>
+    </section>
+
+    <!-- צור קשר -->
+    <section id="contact">
+      <h2>צור קשר</h2>
+      <div
+        class="contact-container"
+        style="display: flex; flex-wrap: wrap; gap: 20px"
+      >
+        <!-- טופס יצירת קשר -->
+        <div class="contact-form" style="flex: 1; min-width: 300px">
+          <label for="name">שם:</label>
+          <input type="text" id="name" placeholder="הזן את שמך" />
+
+          <label for="email">אימייל:</label>
+          <input type="email" id="email" placeholder="example@mail.com" />
+
+          <label for="message">הודעה:</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="כתוב את ההודעה כאן"
+          ></textarea>
+
+          <button onclick="sendMessage()">שלח הודעה</button>
+        </div>
+
+        <!-- תיבת פרטי יצירת קשר -->
+        <div
+          class="contact-info"
+          style="
+            flex: 1;
+            min-width: 300px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+          "
+        >
+          <h3>פרטי יצירת קשר</h3>
+          <p><strong>כתובת:</strong> המלאכה 6, אור יהודה</p>
+          <p><strong>טלפון:</strong> 053-9507644</p>
+          <p>
+            <strong>אימייל:</strong>
+            <a href="mailto:example@mail.com">example@mail.com</a>
+          </p>
+
+          <p>
+           <p><p><strong>שעות פעילות:</strong> ראשון – חמישי: 08:00 – 20:00</p>
+</p>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- אייקונים של FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- כפתור וואטסאפ קבוע -->
+    <style>
+      .whatsapp-fixed {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 55px;
+        height: 55px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        text-decoration: none;
+        z-index: 9999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+      }
+      .whatsapp-fixed:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    <a href="https://wa.me/972539507644" target="_blank" class="whatsapp-fixed">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a
+      href="https://waze.com/ul?q=המלאכה%206%20אור%20יהודה&navigate=yes"
+      class="waze-btn"
+      target="_blank"
+    >
+      WAZE
+    </a>
+
+    <!-- כפתור פייסבוק קבוע -->
+    <style>
+      .facebook-fixed {
+        position: fixed;
+        bottom: 90px;
+        left: 20px;
+        width: 55px;
+        height: 55px;
+        background-color: #1877f2;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        text-decoration: none;
+        z-index: 9999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+      }
+      .facebook-fixed:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    <a
+      href="https://www.facebook.com/lyrwm.lwmynywm.wzkwkyt?locale=he_IL"
+      target="_blank"
+      class="facebook-fixed"
+    >
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- פוטר -->
+    <footer>&copy; 2025 כל הזכויות שמורות לירום אלומיניום בע"מ</footer>
+
+    <!-- סקריפטים -->
+    <script>
+      // מודל גלריה
+      function openModal(img) {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("modalImg").src = img.src;
+      }
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      document
+        .getElementById("myModal")
+        .addEventListener("click", function (e) {
+          if (e.target.id === "myModal") closeModal();
+        });
+      // הפעלת המודל על כל התמונות בחירה לפי class
+      document.querySelectorAll(".clickable-img").forEach((img) => {
+        img.addEventListener("click", () => {
+          openModal(img);
+        });
+      });
+
+      // מחשבון
+      function calcPrice() {
+        const typePrice = parseFloat(
+          document.getElementById("typeSelect").value
+        );
+        const meters = parseFloat(document.getElementById("meters").value);
+        if (meters && meters > 0) {
+          const total = typePrice * meters;
+          document.getElementById("result").innerText =
+            "המחיר המשוער הוא : " + total + ' ש"ח';
+        } else {
+          document.getElementById("result").innerText = "אנא הכנס שטח תקין.";
+        }
+      }
+
+      // שליחת הודעה
+      function sendMessage() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        if (name && email && message) {
+          alert("תודה " + name + "! ההודעה נשלחה בהצלחה.");
+        } else {
+          alert("אנא מלא את כל השדות לפני השליחה.");
+        }
+      }
+
+      
+    </script>
+    <script src="gallery.js"></script>
+    <script src="aluminum-calculator.js"></script>
+  </body>
+</html>
